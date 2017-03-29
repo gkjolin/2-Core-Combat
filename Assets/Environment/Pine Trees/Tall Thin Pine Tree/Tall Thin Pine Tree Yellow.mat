@@ -6,10 +6,10 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: RAMPS
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
+  m_Name: Tall Thin Pine Tree Yellow
+  m_Shader: {fileID: 10511, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _EMISSION _NORMALMAP
+  m_LightmapFlags: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
   m_SavedProperties:
@@ -18,7 +18,7 @@ Material:
     - first:
         name: _BumpMap
       second:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 1aa274375f0b8a842a725586c1983ca8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -46,9 +46,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
-        name: _MainTex
+        name: _GlossMap
       second:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 303352c7d47c6ad499d48c5f881be2a0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -69,13 +75,31 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - first:
+        name: _ShadowOffset
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TranslucencyMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - first:
-        name: _BumpScale
+        name: _AO
+      second: 0
+    - first:
+        name: _BaseLight
       second: 1
     - first:
+        name: _BumpScale
+      second: 0.55
+    - first:
         name: _Cutoff
-      second: 0.5
+      second: 0.335
     - first:
         name: _DetailNormalMapScale
       second: 1
@@ -87,7 +111,7 @@ Material:
       second: 1
     - first:
         name: _Glossiness
-      second: 0.5
+      second: 0.509
     - first:
         name: _GlossyReflections
       second: 1
@@ -98,11 +122,20 @@ Material:
         name: _Mode
       second: 0
     - first:
+        name: _Occlusion
+      second: 0
+    - first:
         name: _OcclusionStrength
       second: 1
     - first:
         name: _Parallax
       second: 0.02
+    - first:
+        name: _ShadowStrength
+      second: 1
+    - first:
+        name: _Shininess
+      second: 0.078125
     - first:
         name: _SmoothnessTextureChannel
       second: 0
@@ -110,10 +143,19 @@ Material:
         name: _SpecularHighlights
       second: 1
     - first:
+        name: _SquashAmount
+      second: 1
+    - first:
         name: _SrcBlend
       second: 1
     - first:
+        name: _TranslucencyViewDependency
+      second: 0.7
+    - first:
         name: _UVSec
+      second: 0
+    - first:
+        name: _WindQuality
       second: 0
     - first:
         name: _ZWrite
@@ -121,7 +163,22 @@ Material:
     m_Colors:
     - first:
         name: _Color
-      second: {r: 0.8, g: 0.8, b: 0.8, a: 1}
+      second: {r: 1, g: 1, b: 1, a: 1}
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _HueVariation
+      second: {r: 1, g: 0.5, b: 0, a: 0.1}
+    - first:
+        name: _SpecColor
+      second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - first:
+        name: _TranslucencyColor
+      second: {r: 0.73, g: 0.85, b: 0.41, a: 1}
+    - first:
+        name: _TreeInstanceColor
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _TreeInstanceScale
+      second: {r: 1, g: 1, b: 1, a: 1}
