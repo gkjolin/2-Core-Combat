@@ -4,19 +4,30 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour {
 
-    public float projectileSpeed; // Note other classes can set
+    [SerializeField] float projectileSpeed; // so we can set in inspector
+    [SerializeField] GameObject shooter; // so we can inspect
 
     float damageCaused;
+
+    public float GetLaunchSpeed()
+    {
+        return projectileSpeed;
+    }
 
     public void SetDamage(float damage)
     {
         damageCaused = damage;
     }
 
+    public void SetShooter(GameObject shooter)
+    {
+        this.shooter = shooter;
+    }
+
     void OnCollisionEnter(Collision collision)
     {
         Component damagableComponent = collision.gameObject.GetComponent(typeof(IDamageable));
-        if (damagableComponent)
+        if (damagableComponent && shooter.GetType() != collision.gameObject.GetType())
         {
             (damagableComponent as IDamageable).TakeDamage(damageCaused);
         }
