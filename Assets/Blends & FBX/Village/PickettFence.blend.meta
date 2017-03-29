@@ -7,17 +7,22 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: BezierCurve
+    100004: Picket_Fence
     400000: //RootNode
     400002: BezierCurve
+    400004: Picket_Fence
     2300000: //RootNode
     2300002: BezierCurve
+    2300004: Picket_Fence
     3300000: //RootNode
     3300002: BezierCurve
+    3300004: Picket_Fence
     4300000: BezierCurve
+    4300002: Picket_Fence
     7400000: Default Take
     9500000: //RootNode
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:
